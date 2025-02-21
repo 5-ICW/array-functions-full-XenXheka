@@ -1,23 +1,9 @@
-const Auto1 = {
-  kleur: "rood",
-  merk: "Audi",
-  bouwjaar: "2023",
-  prijs: 2500,
-};
-const Auto2 = {
-  kleur: "bklauw",
-  merk: "Porche",
-  bouwjaar: "2013",
-  prijs: 1000,
-};
-const Auto3 = {
-  kleur: "zwart",
-  merk: "Kia",
-  bouwjaar: "2027",
-  prijs: 3000,
-};
-function som() {
-  uitkomst = Auto1.prijs + Auto2.prijs + Auto3.prijs;
-  return uitkomst;
+const wagens = [
+  { kleur: "Rood", merk: "Toyota", bouwjaar: 2018, prijs: 15000 },
+  { kleur: "Blauw", merk: "Ford", bouwjaar: 2020, prijs: 18000 },
+  { kleur: "Zwart", merk: "BMW", bouwjaar: 2019, prijs: 25000 },
+];
+function berekenTotalePrijs(autos) {
+  return autos.reduce((totaal, auto) => totaal + auto.prijs, 0);
 }
-console.log(som());
+console.log(berekenTotalePrijs(wagens));
