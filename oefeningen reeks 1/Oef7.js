@@ -3,6 +3,5 @@ const wagens = [
   { kleur: "Blauw", merk: "Ford", bouwjaar: 2020, prijs: 18000 },
   { kleur: "Zwart", merk: "BMW", bouwjaar: 2019, prijs: 25000 },
 ];
-const wagen4 = { kleur: "Wit", merk: "Mercedes", bouwjaar: 2022, prijs: 30000 };
-wagens.push(wagen4);
+wagens.sort((a, b) => a.merk.localeCompare(b.merk));
 console.log(wagens);
